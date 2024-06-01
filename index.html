@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matric Calculator</title>
+    <link rel="icon" type="image/png" href="images/symbol-data-matrix-32.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include numeric.js library from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+    <body>
+        <div id="title">
+            <h1>Matrix Multi-Purpose Calculator</h1>
+        </div>
+        <div class="interior">
+            <div class="mainfield">
+                <div class="entrymatrix1">
+                    <h2>Matrix 1 Input</h2>
+
+                    <form id="matrixForm1">
+                        <fieldset>
+                            <div class="rowcolspacing">
+                                <div id="rowfield">
+                                    <!---rows input-->
+                                    <label for="rows1">Rows:</label>
+                                    <input type="number" id="rows1" name="rows"><br>
+                                </div>
+                                <div id="colfield">
+                                    <!---columns input-->
+                                    <label for="cols1">Columns:</label>
+                                    <input type="number" id="cols1" name="cols"><br>
+                                </div> 
+                            </div>
+                            <!---submit button-->
+                            <input type="submit" id="generate" value="Generate Matrix">
+                        </fieldset>
+                    </form>
+
+                    <div class="matrixFormatter1">
+                        <div id="matrix1"></div>   
+                    </div>
+                    <div class="matrix-button1"><button>Determinant</button><button>Inverse</button><button>Eigenvalues</button><button>Transpose</button><button>Scale</button></div>  
+
+
+                </div>
+
+                <div class="operationsBetween">
+                    <h2>Operations Between Matrices</h2>
+                    <form id="operationsForm">
+                        <fieldset>
+                            <div class="operationsBtwn2M">
+                                <label for="operation">Operation:</label><br>
+                                <select id="operation" name="operation">
+                                    <option value="Addition">Addition</option>
+                                    <option value="Subtraction">Subtraction</option>
+                                    <option value="Multiplication">Multiplication</option>
+                                </select>
+                            </div>
+                            <div id="computebutton">
+                                <button>Compute</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="entrymatrix2">
+                    <h2>Matrix 2 Input</h2>
+                    <form id="matrixForm2">
+                        <fieldset>
+                            <div class="rowcolspacing">
+                                <div id="rowfield">
+                                    <!---rows input-->
+                                    <label for="rows2">Rows:</label>
+                                    <input type="number" id="rows2" name="rows"><br>
+                                </div>
+                                <div id="colfield">
+                                    <!---columns input-->
+                                    <label for="cols2">Columns:</label>
+                                    <input type="number" id="cols2" name="cols"><br>
+                                </div>
+                            </div>
+                            <!---submit button-->
+                            <input type="submit" id="generate" value="Generate Matrix">
+                        </fieldset>
+                    </form>
+
+                    <div class="matrixFormatter2">
+                        <div id="matrix2"></div>
+                    </div>
+                    <div class="matrix-button2"><button>Determinant</button><button>Inverse</button><button>Eigenvalues</button><button>Transpose</button><button>Scale</button></div>  
+                </div>
+            </div>
+            <div class="outputContainer">
+                <div class="outputMatrix">
+                    <h2>Output:</h2>
+                    <div class="result">
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div id="contact-me">
+            <section class="contact-section">
+                <div class="contacts">
+                     <div class="my-contacts">
+                         <a href="https://www.linkedin.com/in/baqer-farhan-1a3a89229/">LinkedIn</a>
+                         <span>|</span>
+                         <a href="https://github.com/baqrfrhn">GitHub</a>
+                         <span>|</span>
+                         <a href="https://baqrfrhn.github.io/Personal-Website/">Personal Website</a>
+                     </div>
+                     <h2>&copy; Coded by Baqer Farhan</h2>
+                </div>
+            </section>
+         </div>
+    </body>
+</html>
